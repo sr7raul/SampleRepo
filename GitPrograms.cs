@@ -1,7 +1,8 @@
 using System;
 
 class GitPrograms{
-  class Prgram{
+  public abstact class Prgram{
+    public abstract string Reverse(string Name);
     static void Palindrome(int num){
       int sum=0, rem, temp;
       temp=num;
