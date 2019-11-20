@@ -1,7 +1,8 @@
 using System;
 
 class GitPrograms{
-  class Prgram{
+  public abstact class Prgram{
+    public abstract void Reverse();
     static void Palindrome(int num){
       int sum=0, rem, temp;
       temp=num;
@@ -28,6 +29,16 @@ class GitPrograms{
         Console.WriteLine("Is Armstrong");
       else
         Console.WriteLine("Is not Armstrong");
+    }
+    
+    public class StringReverse : Program{
+      public override void Reverse(){
+        string str = Console.ReadLine();
+        string result = "";
+        for(int i = str.Length-1; i>=0; i--)
+          result += str[i];
+        Console.WriteLine("result");
+      }
     }
     
     public static void Main(){
